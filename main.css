@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.puzzle {
+  min-width: 200px;
+  min-height: 200px;
+  background: gray;
+}
+
+.draggable {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  border: 1px solid gray;
+  position: absolute;
+}
+
+.won {
+  display: none;
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+
+.won > button {
+  margin-top: 20px;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+}
